@@ -6,12 +6,12 @@
 
         <title>Classes and Objects: Encapsulating Behavior :: Unit 3: Back-End Java Skill Track</title>
 
-        <link rel="stylesheet" href="http://education.launchcode.org/skills-back-end-java/css/bootstrap.min.css">
-        <link rel="stylesheet" href="http://education.launchcode.org/skills-back-end-java/css/highlight.launchcode.css">
-        <link rel="stylesheet" href="http://education.launchcode.org/skills-back-end-java/css/main.css">
+        <link rel="stylesheet" href="http://kevinstock.github.io/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://kevinstock.github.io/css/highlight.launchcode.css">
+        <link rel="stylesheet" href="http://kevinstock.github.io/css/main.css">
         <link rel="stylesheet" href="https://djwbyvgln9kts.cloudfront.net/launch_ed_style/custom.css">
     </head>
-    <body id='page-classes-and-objects-encapsulating-behavior'>
+    <body>
 
         <header class="navbar navbar-default navbar-fixed-top">
 
@@ -22,47 +22,47 @@
                         <a href="#" class="dropdown-toggle glyphicon glyphicon-menu-hamburger" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
                         <ul class="dropdown-menu">
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/classes/">
+                                    <a href="http://kevinstock.github.io/classes/">
                                         Classes
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/studios/">
+                                    <a href="http://kevinstock.github.io/studios/">
                                         Studios
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/assignments/">
+                                    <a href="http://kevinstock.github.io/assignments/">
                                         Assignments
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/videos/">
+                                    <a href="http://kevinstock.github.io/videos/">
                                         Videos
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/resources/">
+                                    <a href="http://kevinstock.github.io/resources/">
                                         Resources
                                     </a>
                                 </li>
                                                             <li class="active lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/java4python/">
+                                    <a href="http://kevinstock.github.io/java4python/">
                                         Java for Python Programmers
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/glossary/">
+                                    <a href="http://kevinstock.github.io/glossary/">
                                         Glossary
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/about/">
+                                    <a href="http://kevinstock.github.io/about/">
                                         About This Unit
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/issues/">
+                                    <a href="http://kevinstock.github.io/issues/">
                                         Reporting Issues
                                     </a>
                                 </li>
@@ -77,13 +77,13 @@
             </ul>
 
             <div>
-                <a class="navbar-brand site-title navbar-center" href="http://education.launchcode.org/skills-back-end-java/">
+                <a class="navbar-brand site-title navbar-center" href="http://kevinstock.github.io/">
                     <h1>Unit 3: Back-End Java Skill Track</h1>
                 </a>
             </div>
 
             <div class="nav navbar-nav navbar-right">
-                <a class="navbar-brand dabomb" href="http://education.launchcode.org/skills-back-end-java/"></a>
+                <a class="navbar-brand dabomb" href="http://kevinstock.github.io/"></a>
             </div>
 
         </header>
@@ -370,15 +370,15 @@ if (bono1.equals(bono2)) {
 <p><img src="equality.png" alt="Equality" /></p>
 <p><strong>Identity</strong></p>
 <p><img src="identity.png" alt="Identity" /></p>
-<p>You'll often want to implement <code>equals()</code> yourself. However, if you do so, be sure to understand best practices around how the method should behave, which are <a href="https://www.sitepoint.com/implement-javas-equals-method-correctly/" target="_blank">not so simple</a>. In fact, the <code>equals()</code> method we have here isn't very good by most Java programmers' standards. We'll dedicate time to learning how to best write an <code>equals()</code> method in a future lesson.</p>
+<p>You'll often want to implement <code>equals()</code> yourself. However, if you do so, be sure to understand best practices around how the method should behave, which are <a href="https://www.sitepoint.com/implement-javas-equals-method-correctly/">not so simple</a>. In fact, the <code>equals()</code> method we have here isn't very good by most Java programmers' standards. We'll dedicate time to learning how to best write an <code>equals()</code> method in a future lesson.</p>
 <p>One catch of working with <code>equals()</code> is that its input parameter must be of type <code>Object</code>, even if we're working in a class like <code>Student</code>. The reason why will become more clear in the next lesson, where we introduce the <code>Object</code> class. For now, the practical implication is that we must convert, or <strong>cast</strong>, the input <code>o</code> to be of type <code>Student</code> with the syntax <code>(Student) o</code>. Then we compare the converted student's ID to that of the current student.</p>
 <aside class="aside-pro-tip">
-<p>Seasoned Java developers will tell you that every time you implement your own version of <code>equals()</code> you should also implement your own version of <code>hashCode()</code>. <code>hashCode()</code> is another special method that every class has. Understanding <code>hashCode()</code> would take us a bit far afield at this point, but we would be remiss to not mention it. If you want to read more, <a href="https://www.sitepoint.com/how-to-implement-javas-hashcode-correctly/" target="_blank">go for it</a>!</p>
+<p>Seasoned Java developers will tell you that every time you implement your own version of <code>equals()</code> you should also implement your own version of <code>hashCode()</code>. <code>hashCode()</code> is another special method that every class has. Understanding <code>hashCode()</code> would take us a bit far afield at this point, but we would be remiss to not mention it. If you want to read more, <a href="https://www.sitepoint.com/how-to-implement-javas-hashcode-correctly/">go for it</a>!</p>
 </aside>
 <p>While you may not need to write your own <code>equals</code> method for each class you create, the more immediate implication for you as a new Java programmer is that you should <em>always use</em> <code>equals()</code> yourself when comparing objects. This is especially true when working with objects of types provided by Java, such as <code>String</code>. A class that is part of Java or a third-party library will have implemented <code>equals()</code> in a way appropriate for the particular class, whereas <code>==</code> will only check to see if two objects are the same literal object.</p>
 <h2 id="single-responsibility-principle">Single Responsibility Principle</h2>
 <p>As we wrap up our whirlwind tour of encapsulation, we want you think a bit about how to go about building good classes. Doing so is more of an art than a science, and it will take you lots of practice and time. However, there are a few rules that we've pointed out to help guide you. Here's one more.</p>
-<p>From <a href="https://en.wikipedia.org/wiki/Single_responsibility_principle" target="_blank">Wikipedia</a>:</p>
+<p>From <a href="https://en.wikipedia.org/wiki/Single_responsibility_principle">Wikipedia</a>:</p>
 <aside class="aside-definition">
 <p>The <strong>single responsibility principle</strong> states that every module or class should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class.</p>
 </aside>
@@ -386,12 +386,12 @@ if (bono1.equals(bono2)) {
 <p>As you go forth and create classes, the main thing to keep in mind is that your skill and judgement in creating Java classes will improve over time. The best way to improve is to write lots of code, ask lots of questions, and continue learning!</p>
 <h2 id="references">References</h2>
 <ul>
-<li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/methods.html" target="_blank">Defining Methods (docs.oracle.com)</a></li>
-<li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/constructors.html" target="_blank">Constructors (docs.oracle.com)</a></li>
-<li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/arguments.html" target="_blank">Passing Data to a Method or Constructor (docs.oracle.com)</a></li>
-<li><a href="https://www.sitepoint.com/implement-javas-equals-method-correctly/" target="_blank">How to Implement Java’s equals Method Correctly</a></li>
-<li><a href="https://www.sitepoint.com/how-to-implement-javas-hashcode-correctly/" target="_blank">How to Implement Java’s hashCode Correctly</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Single_responsibility_principle" target="_blank">Single Responsibility Principle</a></li>
+<li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/methods.html">Defining Methods (docs.oracle.com)</a></li>
+<li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/constructors.html">Constructors (docs.oracle.com)</a></li>
+<li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/arguments.html">Passing Data to a Method or Constructor (docs.oracle.com)</a></li>
+<li><a href="https://www.sitepoint.com/implement-javas-equals-method-correctly/">How to Implement Java’s equals Method Correctly</a></li>
+<li><a href="https://www.sitepoint.com/how-to-implement-javas-hashcode-correctly/">How to Implement Java’s hashCode Correctly</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Single_responsibility_principle">Single Responsibility Principle</a></li>
 </ul>
                                     </section>
 
@@ -399,8 +399,8 @@ if (bono1.equals(bono2)) {
         </main>
 
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script src="http://education.launchcode.org/skills-back-end-java/js/bootstrap.min.js"></script>
-        <script src="http://education.launchcode.org/skills-back-end-java/js/highlight.pack.js"></script>
+        <script src="http://kevinstock.github.io/js/bootstrap.min.js"></script>
+        <script src="http://kevinstock.github.io/js/highlight.pack.js"></script>
 
         <script>
             $(function() {
@@ -418,7 +418,7 @@ if (bono1.equals(bono2)) {
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
             })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-            ga('create', "UA-78748330-4", 'auto');
+            ga('create', "", 'auto');
             ga('send', 'pageview');
 
         </script>

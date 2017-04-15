@@ -6,12 +6,12 @@
 
         <title>Studio: CheeseMVC :: Unit 3: Back-End Java Skill Track</title>
 
-        <link rel="stylesheet" href="http://education.launchcode.org/skills-back-end-java/css/bootstrap.min.css">
-        <link rel="stylesheet" href="http://education.launchcode.org/skills-back-end-java/css/highlight.launchcode.css">
-        <link rel="stylesheet" href="http://education.launchcode.org/skills-back-end-java/css/main.css">
+        <link rel="stylesheet" href="http://kevinstock.github.io/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://kevinstock.github.io/css/highlight.launchcode.css">
+        <link rel="stylesheet" href="http://kevinstock.github.io/css/main.css">
         <link rel="stylesheet" href="https://djwbyvgln9kts.cloudfront.net/launch_ed_style/custom.css">
     </head>
-    <body id='page-studio-cheesemvc'>
+    <body>
 
         <header class="navbar navbar-default navbar-fixed-top">
 
@@ -22,47 +22,47 @@
                         <a href="#" class="dropdown-toggle glyphicon glyphicon-menu-hamburger" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
                         <ul class="dropdown-menu">
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/classes/">
+                                    <a href="http://kevinstock.github.io/classes/">
                                         Classes
                                     </a>
                                 </li>
                                                             <li class="active lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/studios/">
+                                    <a href="http://kevinstock.github.io/studios/">
                                         Studios
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/assignments/">
+                                    <a href="http://kevinstock.github.io/assignments/">
                                         Assignments
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/videos/">
+                                    <a href="http://kevinstock.github.io/videos/">
                                         Videos
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/resources/">
+                                    <a href="http://kevinstock.github.io/resources/">
                                         Resources
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/java4python/">
+                                    <a href="http://kevinstock.github.io/java4python/">
                                         Java for Python Programmers
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/glossary/">
+                                    <a href="http://kevinstock.github.io/glossary/">
                                         Glossary
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/about/">
+                                    <a href="http://kevinstock.github.io/about/">
                                         About This Unit
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/issues/">
+                                    <a href="http://kevinstock.github.io/issues/">
                                         Reporting Issues
                                     </a>
                                 </li>
@@ -77,13 +77,13 @@
             </ul>
 
             <div>
-                <a class="navbar-brand site-title navbar-center" href="http://education.launchcode.org/skills-back-end-java/">
+                <a class="navbar-brand site-title navbar-center" href="http://kevinstock.github.io/">
                     <h1>Unit 3: Back-End Java Skill Track</h1>
                 </a>
             </div>
 
             <div class="nav navbar-nav navbar-right">
-                <a class="navbar-brand dabomb" href="http://education.launchcode.org/skills-back-end-java/"></a>
+                <a class="navbar-brand dabomb" href="http://kevinstock.github.io/"></a>
             </div>
 
         </header>
@@ -134,10 +134,10 @@
 <p>Create a new controller method and view to present a form to remove cheese. The form should make  <code>POST</code> request to a controller at the same URL as the form, and should redirect to the <code>Index</code> view associated with the <code>Cheese</code> controller.</p>
 <p>When presenting the form, you have a couple of options:</p>
 <ol>
-<li>Present a checkbox next to each cheese. Recall that a checkbox is an <code>input</code> element of <code>type='checkbox'</code>. Look up details on <a href="https://www.w3schools.com/html/html_form_input_types.asp" target="_blank">w3c</a>. For this scenario, you'll want the same <code>name</code> attribute for each checkbox. Additionally, it will be possible for users to submit multiple cheeses for deletion at once, so in the controller handling form submission, the input parameter should be a collection. For example, if you have <code>name='cheese'</code> on each checkbox, you'll want an input parameter <code>ArrayList&lt;String&gt; cheese</code>.</li>
-<li>Present a dropdown to allow the user to select which cheese they would like to delete. This approach allows for only one item to be deleted at a time. You'll need to use a <code>select</code> element for this, which you can <a href="https://www.w3schools.com/htmL/html_form_elements.asp" target="_blank">read about on w3c</a>.</li>
+<li>Present a checkbox next to each cheese. Recall that a checkbox is an <code>input</code> element of <code>type='checkbox'</code>. Look up details on <a href="https://www.w3schools.com/html/html_form_input_types.asp">w3c</a>. For this scenario, you'll want the same <code>name</code> attribute for each checkbox. Additionally, it will be possible for users to submit multiple cheeses for deletion at once, so in the controller handling form submission, the input parameter should be a collection. For example, if you have <code>name='cheese'</code> on each checkbox, you'll want an input parameter <code>ArrayList&lt;String&gt; cheese</code>.</li>
+<li>Present a dropdown to allow the user to select which cheese they would like to delete. This approach allows for only one item to be deleted at a time. You'll need to use a <code>select</code> element for this, which you can <a href="https://www.w3schools.com/htmL/html_form_elements.asp">read about on w3c</a>.</li>
 </ol>
-<p>To remove an item from an ArrayList, have a look at the <a href="http://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html" target="_blank">ArrayList documentation</a>.</p>
+<p>To remove an item from an ArrayList, have a look at the <a href="http://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html">ArrayList documentation</a>.</p>
 <h3 id="remove-cheese-via-links">Remove Cheese Via Links</h3>
 <aside class="aside-warning">
 <p>It's rare to use <code>GET</code> requests to delete data, and should be avoided in the vast majority of situations, especially if the actions aren't protected by a login. Bots and scripts could easily crawl your site and delete your data by following links.</p>
@@ -157,8 +157,8 @@
         </main>
 
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script src="http://education.launchcode.org/skills-back-end-java/js/bootstrap.min.js"></script>
-        <script src="http://education.launchcode.org/skills-back-end-java/js/highlight.pack.js"></script>
+        <script src="http://kevinstock.github.io/js/bootstrap.min.js"></script>
+        <script src="http://kevinstock.github.io/js/highlight.pack.js"></script>
 
         <script>
             $(function() {
@@ -176,7 +176,7 @@
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
             })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-            ga('create', "UA-78748330-4", 'auto');
+            ga('create', "", 'auto');
             ga('send', 'pageview');
 
         </script>

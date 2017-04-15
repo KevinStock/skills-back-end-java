@@ -6,12 +6,12 @@
 
         <title>Assignment: TechJobs (Console Edition) :: Unit 3: Back-End Java Skill Track</title>
 
-        <link rel="stylesheet" href="http://education.launchcode.org/skills-back-end-java/css/bootstrap.min.css">
-        <link rel="stylesheet" href="http://education.launchcode.org/skills-back-end-java/css/highlight.launchcode.css">
-        <link rel="stylesheet" href="http://education.launchcode.org/skills-back-end-java/css/main.css">
+        <link rel="stylesheet" href="http://kevinstock.github.io/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://kevinstock.github.io/css/highlight.launchcode.css">
+        <link rel="stylesheet" href="http://kevinstock.github.io/css/main.css">
         <link rel="stylesheet" href="https://djwbyvgln9kts.cloudfront.net/launch_ed_style/custom.css">
     </head>
-    <body id='page-assignment-techjobs-console-edition'>
+    <body>
 
         <header class="navbar navbar-default navbar-fixed-top">
 
@@ -22,47 +22,47 @@
                         <a href="#" class="dropdown-toggle glyphicon glyphicon-menu-hamburger" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
                         <ul class="dropdown-menu">
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/classes/">
+                                    <a href="http://kevinstock.github.io/classes/">
                                         Classes
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/studios/">
+                                    <a href="http://kevinstock.github.io/studios/">
                                         Studios
                                     </a>
                                 </li>
                                                             <li class="active lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/assignments/">
+                                    <a href="http://kevinstock.github.io/assignments/">
                                         Assignments
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/videos/">
+                                    <a href="http://kevinstock.github.io/videos/">
                                         Videos
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/resources/">
+                                    <a href="http://kevinstock.github.io/resources/">
                                         Resources
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/java4python/">
+                                    <a href="http://kevinstock.github.io/java4python/">
                                         Java for Python Programmers
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/glossary/">
+                                    <a href="http://kevinstock.github.io/glossary/">
                                         Glossary
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/about/">
+                                    <a href="http://kevinstock.github.io/about/">
                                         About This Unit
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/issues/">
+                                    <a href="http://kevinstock.github.io/issues/">
                                         Reporting Issues
                                     </a>
                                 </li>
@@ -77,13 +77,13 @@
             </ul>
 
             <div>
-                <a class="navbar-brand site-title navbar-center" href="http://education.launchcode.org/skills-back-end-java/">
+                <a class="navbar-brand site-title navbar-center" href="http://kevinstock.github.io/">
                     <h1>Unit 3: Back-End Java Skill Track</h1>
                 </a>
             </div>
 
             <div class="nav navbar-nav navbar-right">
-                <a class="navbar-brand dabomb" href="http://education.launchcode.org/skills-back-end-java/"></a>
+                <a class="navbar-brand dabomb" href="http://kevinstock.github.io/"></a>
             </div>
 
         </header>
@@ -149,7 +149,7 @@
 <h3 id="getting-started">Getting Started</h3>
 <p>Set up a local copy of the project:</p>
 <ul>
-<li>Visit the <a href="https://github.com/LaunchCodeEducation/techjobs-console-java" target="_blank">repository page</a> for this project and fork the repository to create a copy under your own GitHub account.</li>
+<li>Visit the <a href="https://github.com/LaunchCodeEducation/techjobs-console-java">repository page</a> for this project and fork the repository to create a copy under your own GitHub account.</li>
 <li>Back in IntelliJ, select <em>File &gt; New &gt; Project from Version Control &gt; GitHub</em>.</li>
 <li>Choose your fork from the repository dropdown, select the parent directory where you'd like to store your project, and hit <em>Clone</em>.</li>
 <li>In the screens that follow, be sure to choose <em>Create Project From Existing Sources</em> on the first pane, and select the default values of all following panes.</li>
@@ -206,7 +206,7 @@ actionChoices.put("list", "List");</code></pre>
 <pre><code class="language-java">String columnChoice = getUserSelection("List", columnChoices);</code></pre>
 <p>This references <code>columnChoices</code>, which is declared at the top of <code>main</code> has a similar structure to <code>actionChoices</code> (they're the same data type and are used in calls to the same method, so this shouldn't be surprising). Most of the entries in <code>columnChoices</code> correspond to columns in the jobs data set, but there's one additional entry with key/value pair <code>"all"</code>/<code>"All"</code>. These entries will help us present to the user the options for searching our data, which will correspond to searching within a given column, or searching all columns at once.</p>
 <p>The keys in <code>actionChoices</code> and <code>columnChoices</code> represent the &quot;internal&quot; string we'll use to refer to these options -- for example, when representing the user's menu choice, or querying data -- and the values in the dictionary represent the &quot;external&quot; way that these are represented to the user.</p>
-<p>Within <code>getUserSelection</code> itself, most of the code is within a do-while loop. A <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/while.html" target="_blank">do-while loop</a> is similar to a while loop, but the conditional check is at the <em>end</em> of the loop's code block. This has the net consequence that the loop's code block <em>always runs at least once</em>. At the end of the block's execution, we check a condition to determine if we should run the block again. This nicely mimics the behavior of simple menu-driven applications.</p>
+<p>Within <code>getUserSelection</code> itself, most of the code is within a do-while loop. A <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/while.html">do-while loop</a> is similar to a while loop, but the conditional check is at the <em>end</em> of the loop's code block. This has the net consequence that the loop's code block <em>always runs at least once</em>. At the end of the block's execution, we check a condition to determine if we should run the block again. This nicely mimics the behavior of simple menu-driven applications.</p>
 <p>Within this loop, menu options are printed to the screen and user input is collected. If input is valid, it returns the choice as a string to the caller. This string corresponds to the chosen key (from <code>choices</code>, which will be either <code>actionChoices</code> or <code>columnChoices</code>) of the item the user selected. If invalid, it re-prompts the user.</p>
 <p>The local variable <code>choiceKeys</code> is used to easily enumerate the <code>choices</code> HashMap. In other words, it gives us a simple way to provide an ordering to <code>choices</code>, which doesn't have an ordering of its own.</p>
 <h4 id="the-jobdata-class">The JobData Class</h4>
@@ -303,8 +303,8 @@ core competency: Statistical Analysis
         </main>
 
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script src="http://education.launchcode.org/skills-back-end-java/js/bootstrap.min.js"></script>
-        <script src="http://education.launchcode.org/skills-back-end-java/js/highlight.pack.js"></script>
+        <script src="http://kevinstock.github.io/js/bootstrap.min.js"></script>
+        <script src="http://kevinstock.github.io/js/highlight.pack.js"></script>
 
         <script>
             $(function() {
@@ -322,7 +322,7 @@ core competency: Statistical Analysis
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
             })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-            ga('create', "UA-78748330-4", 'auto');
+            ga('create', "", 'auto');
             ga('send', 'pageview');
 
         </script>

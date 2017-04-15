@@ -6,12 +6,12 @@
 
         <title>Intro to Spring Boot: Model Validation :: Unit 3: Back-End Java Skill Track</title>
 
-        <link rel="stylesheet" href="http://education.launchcode.org/skills-back-end-java/css/bootstrap.min.css">
-        <link rel="stylesheet" href="http://education.launchcode.org/skills-back-end-java/css/highlight.launchcode.css">
-        <link rel="stylesheet" href="http://education.launchcode.org/skills-back-end-java/css/main.css">
+        <link rel="stylesheet" href="http://kevinstock.github.io/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://kevinstock.github.io/css/highlight.launchcode.css">
+        <link rel="stylesheet" href="http://kevinstock.github.io/css/main.css">
         <link rel="stylesheet" href="https://djwbyvgln9kts.cloudfront.net/launch_ed_style/custom.css">
     </head>
-    <body id='page-intro-to-spring-boot-model-validation'>
+    <body>
 
         <header class="navbar navbar-default navbar-fixed-top">
 
@@ -22,47 +22,47 @@
                         <a href="#" class="dropdown-toggle glyphicon glyphicon-menu-hamburger" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
                         <ul class="dropdown-menu">
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/classes/">
+                                    <a href="http://kevinstock.github.io/classes/">
                                         Classes
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/studios/">
+                                    <a href="http://kevinstock.github.io/studios/">
                                         Studios
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/assignments/">
+                                    <a href="http://kevinstock.github.io/assignments/">
                                         Assignments
                                     </a>
                                 </li>
                                                             <li class="active lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/videos/">
+                                    <a href="http://kevinstock.github.io/videos/">
                                         Videos
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/resources/">
+                                    <a href="http://kevinstock.github.io/resources/">
                                         Resources
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/java4python/">
+                                    <a href="http://kevinstock.github.io/java4python/">
                                         Java for Python Programmers
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/glossary/">
+                                    <a href="http://kevinstock.github.io/glossary/">
                                         Glossary
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/about/">
+                                    <a href="http://kevinstock.github.io/about/">
                                         About This Unit
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-back-end-java/issues/">
+                                    <a href="http://kevinstock.github.io/issues/">
                                         Reporting Issues
                                     </a>
                                 </li>
@@ -77,13 +77,13 @@
             </ul>
 
             <div>
-                <a class="navbar-brand site-title navbar-center" href="http://education.launchcode.org/skills-back-end-java/">
+                <a class="navbar-brand site-title navbar-center" href="http://kevinstock.github.io/">
                     <h1>Unit 3: Back-End Java Skill Track</h1>
                 </a>
             </div>
 
             <div class="nav navbar-nav navbar-right">
-                <a class="navbar-brand dabomb" href="http://education.launchcode.org/skills-back-end-java/"></a>
+                <a class="navbar-brand dabomb" href="http://kevinstock.github.io/"></a>
             </div>
 
         </header>
@@ -132,12 +132,12 @@
                 @ModelAttribute @Valid someObject, Errors errors)</code></pre>
 <p>If you don't put the <code>Errors</code> parameter after the parameter with the <code>@Valid</code> attribute, you'll receive an HTTP error.</p>
 <h2 id="code">Code</h2>
-<p>We start this lesson with the code in the <code>video-validation-start</code> branch of the <code>cheese-mvc</code> repo: <a href="https://github.com/LaunchCodeEducation/cheese-mvc/tree/video-validation-start" target="_blank">starting code</a></p>
-<p>We end this lesson with the code in the <code>video-validation-end</code> branch of the <code>cheese-mvc</code> repo: <a href="https://github.com/LaunchCodeEducation/cheese-mvc/tree/video-validation-end" target="_blank">ending code</a></p>
+<p>We start this lesson with the code in the <code>video-validation-start</code> branch of the <code>cheese-mvc</code> repo: <a href="https://github.com/LaunchCodeEducation/cheese-mvc/tree/video-validation-start">starting code</a></p>
+<p>We end this lesson with the code in the <code>video-validation-end</code> branch of the <code>cheese-mvc</code> repo: <a href="https://github.com/LaunchCodeEducation/cheese-mvc/tree/video-validation-end">ending code</a></p>
 <h2 id="references">References</h2>
 <ul>
-<li><a href="http://docs.oracle.com/javaee/6/tutorial/doc/gircz.html" target="_blank">Java Validation API Annotations</a></li>
-<li><a href="https://docs.jboss.org/hibernate/stable/validator/reference/en-US/html_single/#validator-defineconstraints-hv-constraints" target="_blank">Hibernate Validator Annotations</a> - <strong>NOTE</strong>: You must have the proper Hibernate package included as part of your project to use these. For us, they will be included as part of the <code>spring-boot-starter-web</code> dependency that is in our <code>build.gradle</code> file.</li>
+<li><a href="http://docs.oracle.com/javaee/6/tutorial/doc/gircz.html">Java Validation API Annotations</a></li>
+<li><a href="https://docs.jboss.org/hibernate/stable/validator/reference/en-US/html_single/#validator-defineconstraints-hv-constraints">Hibernate Validator Annotations</a> - <strong>NOTE</strong>: You must have the proper Hibernate package included as part of your project to use these. For us, they will be included as part of the <code>spring-boot-starter-web</code> dependency that is in our <code>build.gradle</code> file.</li>
 </ul>
                                     </section>
 
@@ -145,8 +145,8 @@
         </main>
 
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script src="http://education.launchcode.org/skills-back-end-java/js/bootstrap.min.js"></script>
-        <script src="http://education.launchcode.org/skills-back-end-java/js/highlight.pack.js"></script>
+        <script src="http://kevinstock.github.io/js/bootstrap.min.js"></script>
+        <script src="http://kevinstock.github.io/js/highlight.pack.js"></script>
 
         <script>
             $(function() {
@@ -164,7 +164,7 @@
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
             })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-            ga('create', "UA-78748330-4", 'auto');
+            ga('create', "", 'auto');
             ga('send', 'pageview');
 
         </script>
