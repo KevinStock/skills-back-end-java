@@ -3,22 +3,22 @@ template:
     # directory: ../../../../Template-Light
 
 # Base URL of the published website
-baseUrl: http://education.launchcode.org/skills-back-end-java
+baseUrl: http://kevinstock.github.io/skills-back-end-java
 
 
 # Used to link to the GitHub project
 github:
-    user: LaunchCodeEducation
+    user: KevinStock
     repo: skills-back-end-java
 
 metaTitle: LC101
 siteTitle: 'Unit 3: Back-End Java Skill Track'
 
 # Google Custom Search Engine ID
-cseId: 014657181352409571810:sq_rqxppnji
+# cseId: 014657181352409571810:sq_rqxppnji
 
 # Google Analytics ID
-gaId: UA-78748330-4
+# gaId: UA-78748330-4
 
 homeBg: https://launchcode.org/assets/cover_banner_blue-8152795f6794e4bbb9fae2a63ad5bb01.jpg
 
